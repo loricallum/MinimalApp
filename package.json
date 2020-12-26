@@ -1,0 +1,22 @@
+{
+  "name": "minimalapp",
+  "version": "1.0.0",
+  "description": "Sample Storage Application for UKBC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorilewis/MinimalApp.git"
+  },
+  "author": "Lori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorilewis/MinimalApp/issues"
+  },
+  "homepage": "https://github.com/lorilewis/MinimalApp#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1"
+  }
+}

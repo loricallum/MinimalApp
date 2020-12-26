@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8" />
+ <title>UKBC Sample Storage DB</title>
+  <script src="src/ctrl/initialize.js"></script>
+  <script src="src/model/Book.js"></script>
+  <script src="src/view/createBook.js"></script>
+  <script>
+   window.addEventListener("load", pl.view.createBook.setupUserInterface);
+  </script>
+</head>
+<body>
+  <h1>Sample Storage Management: Data Inventory</h1>
+  <form id="Book">
+    <p><label>Freezer Name: <input name="isbn" /></label></p>
+    <p><label>Number of Shelves: <input name="title" /></label></p>
+    <p><label>Data: <input name="year" /></label></p>
+    <p><button type="button" name="commit">Save</button></p>
+  </form>
+  <nav><a href="index.html">Back to main menu</a></nav>
+</body>
+</html>

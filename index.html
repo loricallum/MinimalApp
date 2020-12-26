@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="" xml:lang="en" lang="en" vocab="http://schema.org/" typeof="WebApplication">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>UKBC Sample Storage DB</title>
+
+  <meta property="browserRequirements" content="requires HTML5 support" />
+  <meta property="storageRequirements" content="Local Storage of browser" />
+  <meta property="countriesSupported" content="en" />
+  <meta property="applicationCategory" content="Data management" />
+  <meta property="creator" content="Lori Callum" /> <!-- should be a Person object instead of text -->
+  <script src="src/ctrl/initialize.js"></script>
+  <script src="src/model/Book.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<body>
+  <hgroup>
+   <h1>Manual Freezer Inventory</h1>
+   <h2>Sample Storage Management</h2>
+  </hgroup>
+  <figure style="float:right">
+   <a></a>
+  </figure>
+	<p>Operations:</p>
+    <menu>
+      <li><a href="listBooks.html"><button type="button">List all freezers</button></a></li>
+      <li><a href="createBook.html"><button type="button">Add a new freezer</button></a></li>
+      <li><a href="updateBook.html"><button type="button">Update a freezer</button></a></li>
+      <li><a href="deleteBook.html"><button type="button">Delete a freezer</button></a></li>
+      <li><button type="button" onclick="Book.clearData()">Clear database</button></li>
+      <li><button type="button" onclick="Book.createTestData()">Create test data</button></li>
+    </menu>
+    <p>You can test the app by clicking this button <button type="button" onclick="Book.createTestData()">Create test data</button>
+	 and then view it with <a href="listBooks.html"><button type="button">List all freezers</button></a>.
+     <!-- It takes care of only one object type ("books") and supports the four 
+     standard data management operations (<strong>C</strong>reate/<strong>R</strong>ead/<strong>U</strong>pdate/<strong>D</strong>elete), 
+     but it needs to be enhanced by styling the user interface with CSS rules and by adding further important parts 
+     of the app's overall functionality, as explained in our other -->
+
+    <footer style="font-size: small;">
+     <hr />
+     <div>Copyright © 2020 Lori Callum, 
+      <a>Freezer Inventory | UK Biocentre </a>, 
+      
+     </div>
+    </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-48105674-1', 'tu-cottbus.de');
+  ga('send', 'pageview');
+</script>
+</body>
